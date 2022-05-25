@@ -1,3 +1,5 @@
+import kotlin.math.pow
+
 fun main(){
     //Boolean size 1bit false/true
     //Char size 16bit 'a' to 'z' '/n' '/101'
@@ -22,4 +24,62 @@ fun main(){
     println("My name is: "+name+" "+lastname)
     name = "Jeff"
     println("My name is $name $lastname")
+
+    //Sum
+    println(2+2)
+    //Subtract
+    println(2-2)
+    //Division
+    println(2/2)
+    //Modulus
+    println(2%2)
+    //Multiplication
+    println(2*2)
+    //Power
+    println(2.0.pow(2))
+    //Math operations
+    println(1+(9/3)*2)
+    //Boolean comparison/equality
+    println(2==2)
+    println(2!=2)
+    println(2>2)
+    println(2<2)
+    println(2>=2)
+    println(2<=2)
+    //Assignment operations
+    var anyNumber : Int = 0
+    anyNumber+=10
+    anyNumber-=2
+    anyNumber*=2
+    anyNumber/=2
+    anyNumber%=2
+    //Increment & decrement
+    anyNumber++
+    anyNumber--
+    println(anyNumber)
+    //Logic operators
+    var isTrue: Boolean= true
+    var isFalse: Boolean= false
+    //and
+    println(isTrue && isFalse)
+    //or
+    println(isTrue || isFalse)
+    //not
+    println(!isTrue)
+    helloWorld()
+    var myNumber: Int = tripleTheValue(2)
+    println(myNumber)
+    favoriteFoodPrompt("Manuel","ceviche")
+}
+
+fun helloWorld(){
+    println("Hello world")
+}
+
+fun tripleTheValue(numberValue: Int): Int{
+    return numberValue*3
+}
+
+fun favoriteFoodPrompt(name: String, favoriteFood: String): Unit{
+    println("$name's favorite food is $favoriteFood")
 }
